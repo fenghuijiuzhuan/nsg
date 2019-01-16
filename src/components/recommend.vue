@@ -1,6 +1,6 @@
 <template>
   <div class="recommend">
-    <div class="title">{{recommendTitle}}</div>
+    <div class="title"></div>
     <Fleet v-for="(item, index) in fleetArr" :key="index" :fleet-title="item.title" :fleet-tips="item.tips" :fleet-text="item.text"></Fleet>
   </div>
 </template>
@@ -27,10 +27,8 @@ export default {
     margin: 0 auto;
   }
   .recommend .title{
-    color: #A48873;
-    font-size: .32rem;
-    font-weight: bold;
-    text-align: center;
-    padding: .54rem 0;
+    background: url(../assets/images/精品推荐.png) no-repeat center .5rem;
+    background-size: 3.4rem .36rem;
+    height: 1.12rem;
   }
 </style>

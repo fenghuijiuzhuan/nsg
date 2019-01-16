@@ -1,1 +1,65 @@
-.btn{}
+.gFF1F1A{color: #FF1F1A}
+.gD49303{color: #D49303}
+.panel-title{
+  padding: .14rem 0 .32rem;
+  font-weight: bold;
+  color: #A48873;
+  font-size: .32rem;
+  text-align: center;
+}
+.panel-wrap{
+  width: 6.9rem;
+  margin: 0 auto;
+  background: url(/static/images/顶部背景.png) no-repeat  0 0,
+              url(/static/images/顶部边框.png) no-repeat .1rem .1rem,
+              url(/static/images/底部背景.png) no-repeat left bottom;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  background-size: 4.54rem 3.06rem, 6.7rem .76rem,6.9rem 1.92rem;
+  background-color: #FFF;
+  min-height: 3.06rem;
+  position: relative;
+  box-shadow: 0 0  .1rem 0 rgba(0,0,0,.3);
+}
+.panel-wrap .downbg,.panel-wrap-nobtm .downbg{
+  position: absolute;
+  width: 100%;
+  height: .76rem;
+  bottom: .1rem;
+  left: 0;
+  background: url(/static/images/底部边框.png) no-repeat .1rem 0;
+  background-size: 6.7rem .76rem;
+}
+.panel-wrap-nobtm{
+  width: 6.7rem;
+  margin: 0 auto;
+  background: url(/static/images/顶部背景.png) no-repeat  0 0,
+              url(/static/images/顶部边框.png) no-repeat .1rem .1rem;
+  padding-top: .4rem;
+  padding-left: .1rem;
+  padding-right: .1rem;
+  padding-bottom: .4rem;
+  background-size: 4.54rem 3.06rem, 6.7rem .76rem;
+  background-color: #FFF;
+  position: relative;
+  box-shadow: 0 0  .1rem 0 rgba(0,0,0,.3);
+}
+.common-btn{
+  width: 6.02rem;
+  height: 0.84rem;
+  border: none;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  font-size: .28rem;
+  background: url(/static/images/按钮背景.png) no-repeat;
+  background-size: cover;
+}
+.common-btn-tips{
+  padding: .1rem 0 .24rem;
+  text-align: center;
+  color: #957B66;
+  font-size: .24rem;
+}

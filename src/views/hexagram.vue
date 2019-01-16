@@ -12,6 +12,7 @@
             </div>
         </div>
         <Info @poperPay="poper_pay" :hexagram="true" :btnText="btnText"></Info>
+        <Comment></Comment>
         <Recommend :recommendTitle="recommendTitle" :fleetArr="fleetArr"></Recommend>
         <Popay v-if="poperShow" @closePay="close_poper_pay"></Popay>
     </div>
@@ -22,12 +23,14 @@ import titleWrapper from '../components/title';
 import Info from '../components/info';
 import Recommend from '../components/recommend';
 import Popay from '../components/pay';
+import Comment from '../components/comment';
 export default {
     components: {
         titleWrapper,
         Info,
         Recommend,
-        Popay
+        Popay,
+        Comment
     },
     data(){
         return {

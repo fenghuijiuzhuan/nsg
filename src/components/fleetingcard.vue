@@ -1,6 +1,7 @@
 <template>
     <router-link to="/my" class="fleet-item">
-      <div class="fleet bgcfff">
+      <div class="fleet">
+        <div class="downbg"></div>
         <div class="fleet-left">
           <p class="tit">{{fleetTitle}}</p>
           <p class="ts">{{fleetTips}}</p>
@@ -22,11 +23,23 @@ export default {
 
 <style scoped>
   .fleet{
+    position: relative;
     padding: .3rem .3rem .15rem;
     margin-bottom: .2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #ffffff url(/static/images/顶部边框.png) no-repeat .1rem .1rem;
+    background-size: 6.7rem .76rem;
+  }
+  .fleet .downbg{
+    position: absolute;
+    width: 100%;
+    height: .76rem;
+    bottom: .1rem;
+    left: 0;
+    background: url(/static/images/底部边框.png) no-repeat .1rem 0;
+    background-size: 6.7rem .76rem;
   }
   .fleet-item:last-child .fleet{
     margin-bottom: 0;

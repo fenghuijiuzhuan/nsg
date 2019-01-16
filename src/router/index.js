@@ -39,6 +39,16 @@ export default new Router({
       path: '/hexagram',
       name: 'Hexagram',
       component: () => import('../views/hexagram')
+    },
+    {
+      path: '/hexagramresult',
+      name: 'Hexagramresult',
+      component: () => import('../views/hexagramresult')
+    },
+    {
+      path: '/taisui',
+      name: 'Taisui',
+      component: () => import('../views/taisui')
     }
   ]
 })

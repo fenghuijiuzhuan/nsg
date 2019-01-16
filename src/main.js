@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import "./assets/css/reset.css"
+import "./assets/css/comm.css"
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 (function() {
