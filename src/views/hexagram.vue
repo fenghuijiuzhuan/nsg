@@ -11,7 +11,7 @@
                 <div class="downbg"></div>
             </div>
         </div>
-        <Info @poperPay="poper_pay"></Info>
+        <Info @poperPay="poper_pay" :hexagram="true" :btnText="btnText"></Info>
         <Recommend :recommendTitle="recommendTitle" :fleetArr="fleetArr"></Recommend>
         <Popay v-if="poperShow" @closePay="close_poper_pay"></Popay>
     </div>
@@ -37,7 +37,8 @@ export default {
                 {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
                 {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
             ],
-            poperShow: false
+            poperShow: false,
+            btnText: "立即起卦"
         }
     },
     created(){

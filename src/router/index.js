@@ -36,9 +36,9 @@ export default new Router({
       component: () => import('../views/calculate')
     },
     {
-      path: '/pay',
-      name: 'Pay',
-      component: () => import('../views/pay')
+      path: '/hexagram',
+      name: 'Hexagram',
+      component: () => import('../views/hexagram')
     }
   ]
 })

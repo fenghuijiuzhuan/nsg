@@ -29,6 +29,7 @@ export default {
     top: 0;
     box-sizing: border-box;
     border-bottom: 1px solid #EAE7DB;
+    z-index: 1001;
 }
 .title-text {
     font-size:0.34rem;
