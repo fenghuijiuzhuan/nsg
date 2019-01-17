@@ -1,7 +1,7 @@
 <template>
   <div class="resultcard">
     <div class="leftbox">
-      <div class="key"><img src="../assets/images/乾.png" alt="乾"></div>
+      <div class="key" v-for="(item,index) in keyword" :key="index"><img :src="item" alt="乾"></div>
     </div>
     <div class="rightbox">
       <p>姓名：<span class="name">aaaa</span>性别：<span>a</span></p>
@@ -16,6 +16,7 @@
 <script>
 export default {
   name: "ResultCard",
+  props: ["keyword"],
   data(){
     return {
 
@@ -34,6 +35,8 @@ export default {
     background-size: cover;
     box-shadow: 0 0 .3rem 0 rgba(0,0,0,.1);
     padding: 0 .1rem;
+    position: relative;
+    z-index: 1;
   }
   .resultcard .leftbox{
     width: 2rem;
@@ -48,6 +51,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -.64rem;
   }
   .resultcard .leftbox .key img{
     width: 1rem;

@@ -1,7 +1,7 @@
 <template>
   <div class="hexagramresult">
     <title-wrapper titleText="辛汇智"></title-wrapper>
-    <ResultCard></ResultCard>
+    <ResultCard :keyword="keyword"></ResultCard>
     <div class="tips">
       <p>您已成功预约起卦</p>
       <p>稍后客服将会跟您取得联系</p>
@@ -24,11 +24,12 @@ export default {
     },
     data(){
         return {
-            fleetArr: [
-                {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
-                {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
-                {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
-            ]
+          keyword: ["/static/images/乾.png"],
+          fleetArr: [
+            {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
+            {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
+            {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
+          ]
         }
     },
     created(){

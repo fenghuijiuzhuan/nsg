@@ -49,6 +49,11 @@ export default new Router({
       path: '/taisui',
       name: 'Taisui',
       component: () => import('../views/taisui')
+    },
+    {
+      path: '/eight',
+      name: 'Eight',
+      component: () => import('../views/eight')
     }
   ]
 })
