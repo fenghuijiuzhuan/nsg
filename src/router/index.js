@@ -54,6 +54,26 @@ export default new Router({
       path: '/eight',
       name: 'Eight',
       component: () => import('../views/eight')
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: () => import('../views/login')
+    },
+    {
+      path: '/guaxiang',
+      name: 'Guaxiang',
+      component: () => import('../views/guaxiang')
+    },
+    {
+      path: '/jiduyunshi',
+      name: 'Jiduyunshi',
+      component: () => import('../views/jiduyunshi')
+    },
+    {
+      path: '/sjpp',
+      name: 'Sjpp',
+      component: () => import('../views/sjpp')
     }
   ]
 })
