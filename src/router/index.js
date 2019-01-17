@@ -74,6 +74,11 @@ export default new Router({
       path: '/sjpp',
       name: 'Sjpp',
       component: () => import('../views/sjpp')
+    },
+    {
+      path: '/peach',
+      name: 'peach',
+      component: () => import('../views/peach')
     }
   ]
 })

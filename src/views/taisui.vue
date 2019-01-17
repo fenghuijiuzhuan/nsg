@@ -2,13 +2,13 @@
     <div class="taisui">
         <title-wrapper titleText="辛汇智"></title-wrapper>
         <div class="banner"><img src="../assets/images/化太岁.png"></div>
-        <ResultCard style="margin-bottom: 0;"></ResultCard>
+        <ResultCard style="margin-bottom: 0;" :keyword="keyword"></ResultCard>
         <PanelCard :panel="panel1" class="nobtmbg"></PanelCard>
         <PanelCard :panel="panel2" class="nobtmbg"></PanelCard>
         <PanelCard :panel="panel3" class="nobtmbg"></PanelCard>
         <PanelCard :panel="panel4"></PanelCard>
         <PanelCard :panel="panel5">
-            <Comment slot="comment"></Comment>
+            <Comment :slot="panel5.slotName"></Comment>
         </PanelCard>
         <Recommend :fleetArr="fleetArr"></Recommend>
     </div>
@@ -30,6 +30,7 @@ export default {
     },
     data(){
         return {
+            keyword: ["/static/images/乾.png"],
             fleetArr: [
                 {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
                 {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
@@ -66,7 +67,8 @@ export default {
             },
             panel5: {
                 title: '/static/images/评论反馈.png',
-                child: "component"
+                child: "component",
+                slotName: "comment"
             }
         }
     },

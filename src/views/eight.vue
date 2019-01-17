@@ -240,34 +240,6 @@ export default {
   font-size: .22rem;
   color: #222222;
 }
-
-.gA48873{
-  color:#A48873;
-}
-.g00E19C{
-  color:#00E19C;
-}
-.g39DC3D{
-  color: #39DC3D;
-}
-.g1D8DFF{
-  color:#1D8DFF;
-}
-.gFF1F1A{
-  color:#FF1F1A;
-}
-.gFF213B{
-  color: #FF213B;
-}
-.gECD475{
-  color: #ECD475;
-}
-.gD49303{
-  color: #D49303;
-}
-.g222222{
-  color: #222222;
-}
 .matrix{
   text-align: center;
   color: #A48873;

@@ -63,9 +63,6 @@ export default {
 </script>
 
 <style scoped>
-  .info{
-    
-  }
   .info-wrap{
     width: 6.9rem;
     margin: 0 auto;

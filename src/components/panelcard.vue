@@ -3,7 +3,7 @@
     <div class="title" :style="{'background-image': 'url('+panel.title+')'}"></div>
     <div v-if="panel.child=='component'" class="body">
       <div class="downbd"></div>
-      <slot name="comment"></slot>
+      <slot :name="panel.slotName"></slot>
     </div>
     <div v-else-if="panel.child">
       <div v-for="(item,index) in panel.child" :key="index" class="body" :style="{'margin-top': index==0?0:'.2rem'}">
