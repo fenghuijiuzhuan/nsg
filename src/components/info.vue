@@ -17,7 +17,8 @@
           </div>
           <div class="info-row">
             <label>出生日期</label>
-            <input type="text" placeholder="2019-1-4（阳历）">
+            <input type="text" id="dateShow" placeholder="2019-1-4（阳历）">
+            <input type="date" @change="dateChange" id="date" placeholder="2019-1-4（阳历）">
             <i class="icon"></i>
           </div>
           <div v-if="!hexagram" class="info-row">
@@ -57,6 +58,10 @@ export default {
   methods: {
     poper: function(){
       this.$emit('poperPay')
+    },
+    dateChange: ()=>{
+      var d = date.value;
+      dateShow.value = d
     }
   }
 }
@@ -114,6 +119,23 @@ export default {
     box-sizing: border-box;
     outline: none;
     font-weight: bold;
+  }
+  .info-row input#date{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .info-row input#date[type="date"]::-webkit-calendar-picker-indicator {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
   .radio-box{
     font-size: .28rem;
