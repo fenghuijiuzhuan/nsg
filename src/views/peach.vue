@@ -16,20 +16,36 @@
     <PanelCard :panel="panel2" class="nobtmbg"></PanelCard>
     <div style="margin-top: .52rem">
       <div class="toggle-card">
-        <div class="toggle-card-header" style="background-image: url(/static/images/桃花详情解读.png);"></div>
-        <div class="toggle-card-body"></div>
+        <div class="toggle-card-header" @click="show1 = !show1" style="background-image: url(/static/images/桃花详情解读.png);"></div>
+        <el-collapse-transition>
+          <div v-show="show1">
+            <div class="toggle-card-body">你好白啊，你是我的掌上佩奇</div>
+          </div>
+        </el-collapse-transition>
       </div>
       <div class="toggle-card">
-        <div class="toggle-card-header" style="background-image: url(/static/images/哪些年份会有桃花.png);"></div>
-        <div class="toggle-card-body"></div>
+        <div class="toggle-card-header" @click="show2 = !show2" style="background-image: url(/static/images/哪些年份会有桃花.png);"></div>
+        <el-collapse-transition>
+          <div v-show="show2">
+            <div class="toggle-card-body">你好白啊，你是我的掌上佩奇</div>
+          </div>
+        </el-collapse-transition><div class="toggle-card-body"></div>
       </div>
       <div class="toggle-card">
-        <div class="toggle-card-header" style="background-image: url(/static/images/未来6个月的桃花情况.png);"></div>
-        <div class="toggle-card-body"></div>
+        <div class="toggle-card-header" @click="show3 = !show3" style="background-image: url(/static/images/未来6个月的桃花情况.png);"></div>
+        <el-collapse-transition>
+          <div v-show="show3">
+            <div class="toggle-card-body">你好白啊，你是我的掌上佩奇</div>
+          </div>
+        </el-collapse-transition>
       </div>
       <div class="toggle-card">
-        <div class="toggle-card-header" style="background-image: url(/static/images/哪年会结婚.png);"></div>
-        <div class="toggle-card-body"></div>
+        <div class="toggle-card-header" @click="show4 = !show4" style="background-image: url(/static/images/哪年会结婚.png);"></div>
+        <el-collapse-transition>
+          <div v-show="show4">
+            <div class="toggle-card-body">你好白啊，你是我的掌上佩奇</div>
+          </div>
+        </el-collapse-transition>
       </div>
     </div>
 
@@ -47,10 +63,14 @@ export default {
         titleWrapper,
         ResultCard,
         PanelCard,
-        Recommend
+        Recommend,
     },
     data(){
         return {
+          show1: false,
+          show2: false,
+          show3: false,
+          show4: false,
           keyword: ["/static/images/乾.png"],
           fleetArr: [
             {title: "流年查太岁", tips: "已有6876位缘主测算", text: "岁者，年也。“岁”就是年的意思。就是掌管一年运程的太岁君，即流年。"},
